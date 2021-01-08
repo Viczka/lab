@@ -1,3 +1,12 @@
-tab = [1,2,3,4,5,6,7,8,9,10]
+tab = []
+for i in range(0, 10):
+    a = int(input("Podaj dowolną cyfre: "))
+    tab.append(a)
+    i += 1
+print("Twoja lista zawiera numerki : ")
 print(tab)
-print("1, 4, 7, 9 elementy to:", tab[0], tab[3], tab[6], tab[8] )
+print("Twoje szczesliwe numerki to : ")
+print(tab[1])
+print(tab[4])
+print(tab[7])
+print(tab[9])
