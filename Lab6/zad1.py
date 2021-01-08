@@ -1,3 +1,5 @@
 tab = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
-print(tab)
-print("1, 4, 7, 9 elementy to:", tab[0], tab[3], tab[6], tab[8] )
+print("Indeks numer 1: ", tab[0])
+print("Indeks numer 4: ", tab[3])
+print("Indeks numer 7: ", tab[6])
+print("Indeks numer 9: ", tab[8])
