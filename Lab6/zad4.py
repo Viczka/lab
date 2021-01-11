@@ -1,11 +1,16 @@
 x = int(input("Podaj liczbę:"))
+if x == 0:
+    print("Podałeś liczbę zero")
 a = 0
 list = []
-while True:
-    if a == 0:
-        a += 1
+while a != x:
+    a += 1
     if x % a == 0:
         list.append(a)
-        a += 1
-        print(list)
-    continue
+    if a == x:
+        print("Dzielniki liczby",x,"to:",list)
+
+
+
+
+
