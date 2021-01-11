@@ -25,10 +25,8 @@ c = a + b
 print("Połączyliśmy ciągi a i b:",c)
 print("Długość ciągu c:",len(c))
 i = 0
-while True:
-    if c.count(c[i]) >= 2:
-        print("Liczba", c[i], "powtarza się i występuje", c.count(c[i]),"razy")
-    else:print("Liczba", c[i], "występuje 1 raz")
-    i += 1
-    if i == len(c):
-        break
+while i < len(c):
+    z = c.count(c[i])
+    if z > 1:
+        print("Liczba", c[i], "powtarza się i występuje", z, "razy")
+    i += z
