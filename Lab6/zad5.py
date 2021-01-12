@@ -1,4 +1,3 @@
-# do poprawki ilość wystąpień el. w liście (-39)
 import random
 a = []
 b = []
@@ -24,23 +23,11 @@ while len(b) != x:
 c = a + b
 print("Połączyliśmy ciągi a i b:",c)
 print("Długość ciągu c:",len(c))
+c.sort()
 i = 0
-d = []
-t = []
-while i != len(c):
+while i < len(c):
     z = c.count(c[i])
-    if z == 1:
-        d.append(c[i])
     if z > 1:
-        t.append(c[i])
-    i += 1
-    if i == len(c):
-        print("Elementy, które występują 1 raz",d)
-        print("Elementy, które występują kilka raz",set(t))
-
-
-""" 
-print("Liczba", c[i] ,"występuje 1 raz", z)
-else: print("Liczba", c[i], "powtarza się i występuje", z, "razy")
-d.append(c[i])
-i += 1  """
+        print("Liczba",c[i],"powtarza się i występuje",z,"razy")
+    else:print("Liczba",c[i],"występuje 1 raz")
+    i += z
