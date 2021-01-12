@@ -25,8 +25,16 @@ c = a + b
 print("Połączyliśmy ciągi a i b:",c)
 print("Długość ciągu c:",len(c))
 i = 0
-while i < len(c):
+d = []
+t = []
+while i != len(c):
     z = c.count(c[i])
+    if z == 1:
+        d.append(c[i])
     if z > 1:
-        print("Liczba", c[i], "powtarza się i występuje", z, "razy")
-    i += z
+        t.append(c[i])
+    i += 1
+    if i == len(c):
+        print("Elementy, które występują 1 raz",d)
+        print("Elementy, które występują kilka raz",set(t))
+
