@@ -1,9 +1,15 @@
 import math
-h = input("podaj długość w stopach:")
-def stop (h):
+h = float(input("podaj długość w stopach:"))
+def cm (h):
     cm = float(h) * 30.48
+    return cm
+def mm (h):
     mm = float(h) * 3048
+    return mm
+def km (h):
     km = float(h) * 0.0003048
-    print("w cm:", cm, ',', "w mm:", mm, ",", "w km:", km)
-    return cm, mm, km
-print(stop(h))
+    return km
+print(cm(h),'cm')
+print(mm(h),'mm')
+print(km(h),'km')
+
