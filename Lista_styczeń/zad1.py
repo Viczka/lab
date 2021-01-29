@@ -1,4 +1,3 @@
-# zrobiłam 1 i 2 zadania za pomocą Google. Nie do końca jeszcze rozumiem jak działają, ale spróbuję ogarnąć
 def netto(kwota_brutto):
     emerytalna = 0.0976 * kwota_brutto
     rentowa = 0.015 * kwota_brutto
