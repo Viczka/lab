@@ -94,7 +94,8 @@ def menu():
     x = input("Chcesz rozwiązać test? Odpowiedz 'tak' lub 'nie':")
     if x == 'nie':
         print("Szkoda =(")
-    else: print('Nice =). To zaczynamy zabawe.'), \
-          print(test())
+    elif x == 'tak':
+        print('Nice =). To zaczynamy zabawe.'), print(test())
+    else:print("Padałeś nie poprawną odpowiedź")
 menu()
 
