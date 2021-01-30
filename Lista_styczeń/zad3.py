@@ -12,39 +12,17 @@ def test():
                  '9.Skrót klawiszowy przeznaczony do zapisywania to:',
                  '10.Najważniejszą częścią elektroniczną , umieszczoną wewnątrz jednostki centalnej, nazywaną "mózgiem komputera" jest  :',
                  '11.* Plik to:']
-    answers = ["""    a) klawiatura, 
-    b) drukarka, 
-    c) jednostka centralna""",
-    """    a) paska
-    b) okien 
-    c) kartki""",
-    """    a) kosz
-    b) mój komputer
-    c) moje dokumenty""",
-    """    a) przekazanie informacji na dysk 
-    b) przygotowanie dokumentu do druku
-    c) wyjście z programu""",
-    """    a) rodzaj drukarki
-    b) pamięć komputera 
-    c) program komputerowy""",
-    """    a) drukowanie
-    b) zapisywanie dokumentów
-    c) uruchamianie programów zainstalowanych na komputerze""",
-    """    a) system operacyjny 
-    b) edytor tekstu
-    c) program antywirusowy""",
-    """    a) na dyskietce
-    b) w folderze
-    c) w dolnej części Pulpitu""",
-    """    a) Alt + Z
-    b) Ctrl + S
-    c) Ctrl + Z""",
-    """    a) procesor
-    b) karta graficzna 
-    c) modem""",
-    """    a) zapisana w komputerze informacja 
-    b) program komputerowy
-    c) urządzenie znajdujące się wewnątrz jednostki centralnej"""]
+    answers = ["a) klawiatura\nb) drukarka\nc) jednostka centralna",
+    "a) paska\nb) okien\nc) kartki",
+    "a) kosz\nb) mój komputer\nc) moje dokumenty",
+    "a) przekazanie informacji na dysk\nb) przygotowanie dokumentu do druku\nc) wyjście z programu",
+    "a) rodzaj drukarki\nb) pamięć komputera\nc) program komputerowy",
+    "a) drukowanie\nb) zapisywanie dokumentów\nc) uruchamianie programów zainstalowanych na komputerze",
+    "a) system operacyjny\nb) edytor tekstu\nc) program antywirusowy",
+    "a) na dyskietce\nb) w folderze\nc) w dolnej części Pulpitu",
+    "a) Alt + Z\nb) Ctrl + S\nc) Ctrl + Z",
+    "a) procesor\nb) karta graficzna\nc) modem",
+    "a) zapisana w komputerze informacja\nb) program komputerowy\nc) urządzenie znajdujące się wewnątrz jednostki centralnej"]
     for i in range(0, len(true)):
         print(questions[i])
         print(answers[i])
@@ -71,4 +49,3 @@ def menu():
         print('Nice =). To zaczynamy zabawe.'), print(test())
     else:print("Padałeś nie poprawną odpowiedź")
 menu()
-
