@@ -1,30 +1,26 @@
-# wynik jest taki jak musi być(oprócz daty Wielkanocy..nie wiem jak obliczyć), tylko nie za bardzo udaje mi się umieścić to w funkcje..jeszcze popracuje nad tym
 import datetime
 import time
 def date ():
-    tab = {
-        'today' : '1',
-        'yesterday': '2',
-        'tomorrow' : '3',
-        'birthday': '4'
-    }
-    y = 1
-    for keys in tab.keys():
-        print(y,'-',keys)
-        y += 1
+    tab = ['1 - today',
+           '2 - yesterday',
+           '3 - tomorrow',
+           '4 - birthday'
+    ]
+    for i in range(0,len(tab)):
+        print(tab[i])
     x = input("What date do you want to see?(format: 1-4):")
-    if x == tab['today']:
+    if x == 1:
         today = datetime.date.today()
         print("Today:", "{}.{}.{}".format(today.day, today.month, today.year))
-    elif x == tab['yesterday']:
+    elif x == 2:
         today = datetime.date.today()
         yesterday = today - datetime.timedelta(days=1)
         print("Yesterday was:", "{}.{}.{}".format(yesterday.day,yesterday.month,yesterday.year))
-    elif x == tab['tomorrow']:
+    elif x == 3:
         today = datetime.date.today()
         tomorrow = today + datetime.timedelta(days=+1)
         print("Tomorrow will be:", "{}.{}.{}".format(tomorrow.day, tomorrow.month, tomorrow.year))
-    elif x == tab['birthday']:
+    elif x == 4:
         birthday = input("When you were born?(format - dd.mm.rrrr):")
         print("Your happy day:",time.strftime("%A",time.strptime(birthday , "%d.%m.%Y")))
 date()
