@@ -10,7 +10,7 @@ class student():
         if str.isalpha(nowy_index) == True:
             return "Czuję się robotem z numerem indexu {}, mogli by mówić po prostu {}.".format(self.index, str.capitalize(nowy_index))
         else: return "{} - taki index mi pasuje."
-student1 = student("Viktoriia", "43406", "Informatyka", "1")
+student1 = student("Wiktoria", "43406", "Informatyka", "1")
 student2 = student("Paweł", "14572","Hotelarstwo", "3")
 student3 = student("Kasia", "67877", "Gastronomia", "2")
 print(student1.nik())
