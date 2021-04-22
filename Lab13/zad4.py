@@ -6,10 +6,10 @@ class student():
         self.rok = rok
     def studia(self):
         return "{} studijuje na kierunku {}.".format(self.imie,self.kiekunek)
-    def nik(self, nowy_index = input("Jak chcesz żeby do Ciebie się zwracali? ")):
+    def nik(self, nowy_index = input("Jak chcesz żeby do Ciebie się zwracali?Nikname czy jednak index? Podaj przykład. ")):
         if str.isalpha(nowy_index) == True:
             return "Czuję się robotem z numerem indexu {}, mogli by mówić po prostu {}.".format(self.index, str.capitalize(nowy_index))
-        else: return "{} - taki index mi pasuje."
+        else: return "{} - taki index mi pasuje.".format(nowy_index)
 student1 = student("Wiktoria", "43406", "Informatyka", "1")
 student2 = student("Paweł", "14572","Hotelarstwo", "3")
 student3 = student("Kasia", "67877", "Gastronomia", "2")
