@@ -21,7 +21,7 @@ class motocykl(pojazd):
 
 def main ():
     audi = samochod('audi', "GH678O")
-    honda = motocykl("YJ90O", 143)
+    honda = motocykl("YJ90O", 142)
 
     honda.stoj()
     honda.jedz()
@@ -30,3 +30,8 @@ def main ():
 
 if __name__ == '__main__':
     main()
+#masakra co tu się dzieje, on ma numer YJ90O i jedzie z prędkością 143
+#Tu honda. Jedzie prosto i nawet skręca w prawo i w lewo.
+#Tu audi. Jedzie prosto i nawet skręca w prawo i w lewo.
+#A tak ogólnie to nawet cofa do tyłu.
+#audi
