@@ -19,9 +19,14 @@ class motocykl(pojazd):
     def stoj(self):
         print("masakra co tu się dzieje, on ma numer",self.nr_tablicy,"i jedzie z prędkością",self.predkosc)
 
-honda = motocykl("YJ90O", 143)
-honda.stoj()
-honda.jedz()
-audi = samochod('audi', "GH678O")
-audi.cofaj()
-print(audi.marka)
+def main ():
+    audi = samochod('audi', "GH678O")
+    honda = motocykl("YJ90O", 143)
+
+    honda.stoj()
+    honda.jedz()
+    audi.cofaj()
+    print(audi.marka)
+
+if __name__ == '__main__':
+    main()
