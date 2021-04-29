@@ -43,7 +43,6 @@ def main():
     zabka.fridge.append(Kustosz)
     netto.fridge.append(Lomza)
 
-    print(zabka.fridge)
     zabka.buy()
     zabka.sort_price()
 
