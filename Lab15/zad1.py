@@ -15,6 +15,9 @@ class IceCreamStand(Restaurant):
         super().__init__(name,specification,address,NIP,REGON,open,close)
         self.flavors = flavors
 
+    def about(self):
+        print("Hello.")
+
     def available_flavors(self):
        print(f'Menu : {self.flavors}')
 
@@ -27,6 +30,9 @@ class IceCreamStand(Restaurant):
 class CoffeeShop(Restaurant):
     coffee = ['americano', 'latte', 'capiccino', 'espresso', 'bouble espresso']
     coffee2 = []
+    def about(self):
+        print("Enjoy your meal.")
+
     def __init__(self,name,specification,address,NIP,REGON,open,close,coffee):
         super().__init__(name,specification,address,NIP,REGON,open,close)
         self.coffe = coffee
@@ -41,6 +47,9 @@ class CoffeeShop(Restaurant):
         else: self.coffee2.append(new_coffee)
 
 def main():
+    for i in (IceCreamStand,CoffeeShop):
+        i.about(CoffeeShop)
+
     ice = IceCreamStand("ICECREAM", "restaurant",'Wrocław',8907654,78656678,'12:00','20:00', IceCreamStand.flavors)
     coffee = CoffeeShop("Coffee",'ccoffe','Wrocław',7897657,86545678,'10:00','17:30',CoffeeShop.coffee)
 
@@ -49,7 +58,7 @@ def main():
     coffee.available_coffee()
     coffee.add_coffee()
     print(ice.name, ice.address, ice.REGON)
-    print(ice.__NIP) #wyskoczy bląd ponieważ NIP jest ukryty
+
 
 if __name__ == '__main__':
     main()
