@@ -58,6 +58,7 @@ def main():
     coffee.available_coffee()
     coffee.add_coffee()
     print(ice.name, ice.address, ice.REGON)
+    print(ice.__NIP) #wyskoczy bląd ponieważ NIP jest niewidoczny dla uzytkownika
 
 
 if __name__ == '__main__':
