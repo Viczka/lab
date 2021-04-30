@@ -44,10 +44,19 @@ class Talia(Karta):
                 if i.numer != numer and i.figura != figura:
                     print("Niema takiej karty")
 
-
+    def usun(self):
+        x = int(input("Podaj numer karty którą chcesz usunąć (1-52): "))
+        del p.talia1[x]
 
 p = Talia(Talia.numer,Talia.figura)
 p.tw_talii()
 p.shuffle()
 print("Twój zestaw do gry: ",Talia.talia1)
 print(p.pokaz_karte('6','Wino'))
+p1 = Talia(Talia.numer,Talia.figura)
+p2 = Talia(Talia.figura,Talia.numer)
+p3 = p1 + p2
+print(p3.numer)
+print(p3.figura)
+print(p.usun())
+print(Talia.talia1)
